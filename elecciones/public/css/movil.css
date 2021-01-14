@@ -1,0 +1,376 @@
+#nombre {
+    font-size: 14px;
+}
+
+.icon-movil {
+    display: none;
+}
+
+.consulta-ciudadana {
+    float: right;
+    display: block;
+    position: fixed;
+    right: 20px;
+    bottom: 80%;
+    border-radius: 50%;
+    line-height: 80px;
+    text-align: center;
+    z-index: 80;
+    vertical-align: middle;
+}
+
+.shared-panel1 {
+    float: right;
+    display: block;
+    position: fixed;
+    right: 20px;
+    bottom: 54%;
+    border-radius: 50%;
+    line-height: 80px;
+    text-align: center;
+    z-index: 80;
+    vertical-align: middle;
+}
+
+.shared-panel2 {
+    /*overflow: auto;*/
+    float: right;
+    display: block;
+    position: fixed;
+    right: 20px;
+    bottom: 50%;
+    border-radius: 50%;
+    line-height: 80px;
+    text-align: center;
+    z-index: 80;
+    vertical-align: middle;
+}
+
+.shared-panel3 {
+    /*overflow: auto;*/
+    float: right;
+    display: block;
+    position: fixed;
+    right: 20px;
+    bottom: 46%;
+    border-radius: 50%;
+    line-height: 80px;
+    text-align: center;
+    z-index: 80;
+    vertical-align: middle;
+}
+
+.shared-panel span {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 600;
+    right: 40px;
+    bottom: 40px;
+    /*vertical-align: middle;*/
+}
+
+.shared-panel span2 {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 600;
+    right: 10px;
+    bottom: 80px;
+    vertical-align: middle;
+}
+
+.shared-panel span3 {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 600;
+    right: 10px;
+    bottom: 80px;
+    vertical-align: middle;
+}
+
+.shared {
+    background: url(../images/shared.png) no-repeat;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 5px 0;
+    padding: 0;
+    float: left;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.consulta {
+    background: url(../images/bot_pc_pregunta_ciudadana.png) no-repeat;
+    display: inline-block;
+    width: 250px;
+    height: 80px;
+    margin: 5px 0;
+    padding: 0;
+    float: left;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.shared1 {
+    background: url(../images/shared.png) no-repeat;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 5px 0;
+    padding: 0;
+    float: left;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.shared2 {
+    background: url(../images/shared.png) no-repeat;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 5px 0;
+    padding: 0;
+    float: left;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.shared3 {
+    background: url(../images/shared.png) no-repeat;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 5px 0;
+    padding: 0;
+    float: left;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.shared:hover {
+    opacity: 0.7;
+}
+
+.shared.gp {
+    background-position: 0px 0px;
+    background-color: #E62B34;
+}
+
+.shared.tt {
+    background-position: 0px -30px;
+    background-color: #43BDF0;
+    vertical-align: middle;
+}
+
+.shared.ce {
+    background-position: 0px -60px;
+    background-color: #8A898D;
+}
+
+.shared.wa {
+    background-position: 0px -90px;
+    background-color: #0dc143;
+    vertical-align: middle;
+}
+
+.shared.fb {
+    background-position: 0px -120px;
+    background-color: #6081C4;
+    vertical-align: middle;
+}
+
+.st2 {
+    border-radius: 0;
+}
+
+.st3 {
+    border-radius: 5px;
+}
+
+.fb:after {
+    /*background: #ffffff !important;*/
+}
+
+@media screen and (max-width: 320px) {
+    .sidebar {
+        display: none;
+    }
+    .body-container .page-container {
+        margin-left: 0px;
+    }
+    #nombre {
+        font-size: 11px;
+        margin-right: 10px;
+    }
+    .icon-movil {
+        display: block;
+        margin-right: 10px;
+        padding: 3px;
+        border: 1px solid #d70a00;
+    }
+    .tools-setting {
+        display: none !important;
+    }
+    .principal-proc-prev {
+        display: none !important;
+    }
+    .container-options-header {
+        display: none !important;
+    }
+    .tituloop {
+        font-size: 22px;
+        padding: 10px 8px;
+    }
+    .footer {
+        margin-left: 0px!important;
+    }
+    .consulta-ciudadana {
+        margin-top: -50px;
+        float: right;
+        display: block;
+        right: 20px;
+        bottom: 80%;
+        border-radius: 50%;
+        line-height: 80px;
+        text-align: center;
+        z-index: 80;
+        vertical-align: middle;
+    }
+    .shared-panel1 {
+        float: right;
+        display: block;
+        position: fixed;
+        right: 20px;
+        bottom: 54%;
+        border-radius: 50%;
+        line-height: 80px;
+        text-align: center;
+        z-index: 80;
+        vertical-align: middle;
+    }
+    .shared-panel2 {
+        /*overflow: auto;*/
+        float: right;
+        display: block;
+        position: fixed;
+        right: 20px;
+        bottom: 46%;
+        border-radius: 50%;
+        line-height: 80px;
+        text-align: center;
+        z-index: 80;
+        vertical-align: middle;
+    }
+    .shared-panel3 {
+        /*overflow: auto;*/
+        float: right;
+        display: block;
+        position: fixed;
+        right: 20px;
+        bottom: 38%;
+        border-radius: 50%;
+        line-height: 80px;
+        text-align: center;
+        z-index: 80;
+        vertical-align: middle;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .sidebar {
+        display: none;
+    }
+    .body-container .page-container {
+        margin-left: 0px;
+    }
+    .imgvotoevolucion img {
+        height: 85%;
+        width: 85%;
+    }
+    #nombre {
+        font-size: 11px;
+        margin-right: 10px;
+    }
+    .icon-movil {
+        display: block;
+        margin-right: 10px;
+        padding: 3px;
+        border: 1px solid #d70a00;
+    }
+    .tools-setting {
+        display: none !important;
+    }
+    .principal-proc-prev {
+        display: none !important;
+    }
+    .container-options-header {
+        display: none !important;
+    }
+    .tituloop {
+        font-size: 22px;
+        padding: 10px 8px;
+    }
+    .footer {
+        margin-left: 0px !important;
+    }
+    .consulta-ciudadana {
+        float: right;
+        display: block;
+        position: fixed;
+        right: 20px;
+        bottom: 80%;
+        border-radius: 50%;
+        line-height: 80px;
+        text-align: center;
+        z-index: 80;
+        vertical-align: middle;
+    }
+    .shared-panel1 {
+        float: right;
+        display: block;
+        position: fixed;
+        right: 20px;
+        bottom: 54%;
+        border-radius: 50%;
+        line-height: 80px;
+        text-align: center;
+        z-index: 80;
+        vertical-align: middle;
+    }
+    .shared-panel2 {
+        /*overflow: auto;*/
+        float: right;
+        display: block;
+        position: fixed;
+        right: 20px;
+        bottom: 49%;
+        border-radius: 50%;
+        line-height: 80px;
+        text-align: center;
+        z-index: 80;
+        vertical-align: middle;
+    }
+    .shared-panel3 {
+        /*overflow: auto;*/
+        float: right;
+        display: block;
+        position: fixed;
+        right: 20px;
+        bottom: 44%;
+        border-radius: 50%;
+        line-height: 80px;
+        text-align: center;
+        z-index: 80;
+        vertical-align: middle;
+    }
+}

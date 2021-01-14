@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Elecciones electorales presidenciales 2021" />
+    <meta name="keywords" content="Elecciones, Elecciones 2021, Elecciones Perú, JNE, Jurado Nacional de Elecciones, Candidatos" />
+
+    <title>Elecciones electorales presidenciales</title>
+    <link rel="stylesheet" href="./public/bootstrap/bootstrap.min.css" />
+
+    <script src="./public/jquery/jquery-3.3.1.min.js"></script>
+    <script src="./public/bootstrap/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap" rel="stylesheet">
+
+    <!-- <link href='../fonts/iconsmain/style.css' rel='stylesheet' type='text/css' />
+    <link href='../fonts/iconsmain2/style.css' rel='stylesheet' type='text/css' />
+    <link href='../fonts/iconsredo/style.css' rel='stylesheet' type='text/css' /> -->
+
+
+    <link href='./public/css/main.css' rel='stylesheet' type='text/css' />
+    <link href='./public/css/navbar.css' rel='stylesheet' type='text/css' />
+
+    <link href='./public/css/movil.css' rel='stylesheet' type='text/css' />
+
+    <link href='./public/css/footer.css' rel='stylesheet' type='text/css' />
+    <link href='./public/css/congressional-potitical-organizations.css' rel='stylesheet' type='text/css' />
+    <style>
+        .title-principal-page {
+            font-size: 40px
+        }
+        
+        .name-partide {
+            height: 50px;
+            text-align: center;
+            color: #6c757d;
+        }
+        
+        .tituloop {
+            font-size: 30px;
+            border-bottom: 1px solid #cecece;
+            padding-bottom: 10px;
+            font-family: lato;
+        }
+        
+        .desktop {
+            display: block;
+        }
+        
+        .container-options-header .options-buttons {
+            display: none;
+        }
+        
+        .container-options-body .card-red {
+            height: 310px;
+            margin: 40px 60px;
+        }
+        
+        .card-page {
+            border: 1px solid #9C9C9C;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+        
+        .card-page:hover,
+        .card-page:active,
+        .card-page:focus {
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+        }
+        
+        #btnConsulta2 {
+            display: none;
+        }
+        
+        @media screen and (max-width: 320px) {
+            .title-principal-page {
+                font-size: 2em;
+                text-align: center;
+                line-height: 40px;
+            }
+            .desktop {
+                display: none;
+            }
+            .container-options-header .options-buttons {
+                display: block;
+                text-align: center;
+            }
+            .tituloop {
+                font-size: 24px;
+            }
+            #btnConsulta1 {
+                display: none;
+            }
+        }
+        
+        @media screen and (max-width: 670px) {
+            .title-principal-page {
+                font-size: 2em;
+                text-align: center;
+                line-height: 40px;
+            }
+            .desktop {
+                display: none;
+            }
+            .container-options-header .options-buttons {
+                display: block;
+                text-align: center;
+            }
+            .tituloop {
+                font-size: 24px;
+            }
+            #btnConsulta1 {
+                display: none;
+            }
+            #btnConsulta2 {
+                display: block;
+            }
+        }
+        
+        button.custom-button-2,
+        button.btn.custom-button-2 {
+            background: #000;
+            border-radius: 30px;
+            font-family: 'Lato', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 16px;
+            text-align: center;
+            box-shadow: none;
+            color: #fff;
+            padding: 8px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            left: 0;
+            right: 0;
+            background-color: #fafafa;
+            padding: 0;
+            height: auto;
+            width: 60%;
+            margin: auto;
+            overflow-y: auto;
+            border-radius: 2px;
+            will-change: top, opacity;
+        }
+        
+        .modal .modal-content {
+            padding: 24px;
+        }
+        
+        .modal-custom-1 {
+            background-color: #FFFFFF;
+            border-radius: 20px;
+            font-family: 'Lato', sans-serif;
+            max-height: 90%;
+        }
+        
+        .form-custom-consult .form-control {
+            height: 35px;
+            border-bottom: none;
+            margin-bottom: 5px;
+            font-family: 'Lato', sans-serif;
+            font-size: 12px;
+            padding: 0px 5px;
+            width: calc(100% - 10px);
+            color: #4F4F4F;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="full-container">
+        <!-- Cabecera -->
+
+        <div class="navbar">
+            <div id="inicio" class="logo-navbar" style="width: 150px;">
+                <a href="#" title="Ir a la página de bienvenida" class="lnktool">
+                    <img src="./public/img/logo_jne.png" alt="logo jne" />
+                </a>
+            </div>
+            <div class="menu-navbar">
+                <div class="btn-group icon-block">
+                    <button class="btn dropdown-toggle dropdown-navbar" type="button" id="buttonMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Español
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="buttonMenu1">
+                        <a class="dropdown-item" href="#">Español</a>
+                        <a class="dropdown-item" href="#">Ingles</a>
+                        <a class="dropdown-item" href="#">Quechua</a>
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-linea icon-movil" onclick="openNavBar()">
+                    <img alt="" src="./public/img/lineas.png" style="height:22px; width:24px;"/>
+                </button>
+
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            function openNewTab(url) {
+                window.open(url, "_blank");
+            }
+
+            function openNavBar() {
+
+                /*$('.sidebar').css({ 'display': 'block' });*/
+                $('.sidebar').toggle();
+                e.preventDefault();
+            }
+        </script>
+
+        <!-- =============================================== -->
+        <div class="d-flex full-container body-container">
+            <!-- SIDEBAR -->
+            <!-- <div class="sidebar">
+                <ul class="menu-general">
+                    <li class="menu-principal">
+                        <a class="menu-link" href="https://votoinformado.jne.gob.pe/voto/">
+                            <div class="menu-icon">
+                                <img src="https://votoinformado.jne.gob.pe/voto/images/ico_home_naranja.svg" alt="icono compara" style="height:48px; width:48px;" />
+
+
+                            </div>
+                            <div class="menu-name">
+                                <span class="menu-label-name">Inicio</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="menu-principal">
+                        <a class="menu-link" onclick='openProcesos(this)'>
+                            <div class="menu-icon">
+                                <em class="main-process"></em>
+                            </div>
+                            <div class="menu-name">
+                                <span class="menu-label-name">Procesos</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="menu-principal">
+                        <a class="menu-link" href="https://votoinformado.jne.gob.pe/voto/ComparaCandidatos">
+                            <div class="menu-icon">
+                                <em class="main-compare"></em>
+                            </div>
+                            <div class="menu-name">
+                                <span class="menu-label-name">Compara Candidatos</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="menu-principal">
+                        <a class="menu-link" onclick="openSubMenu(this)">
+                            <div class="menu-icon">
+                                <em class="main-analize"></em>
+                            </div>
+                            <div class="menu-name">
+                                <span class="menu-label-name">Analiza tu Voto</span>
+                            </div>
+                        </a>
+
+                        <ul class="subMenu-principal closed">
+                            <li class="menu-principal">
+                                <a class="menu-link" href="https://votoinformado.jne.gob.pe/voto/Dashboard">
+                                    <div class="menu-icon">
+                                        <img src="https://votoinformado.jne.gob.pe/voto/images/ico_menu_analiza.svg" alt="icono compara" style="height:48px; width:48px;" />
+
+                                    </div>
+                                    <div class="menu-name">
+                                        <span class="menu-label-name">Analiza tu Voto</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="menu-principal">
+                                <a class="menu-link" href="https://votoinformado.jne.gob.pe/voto/ReporteElectoral">
+                                    <div class="menu-icon">
+                                        <img src="https://votoinformado.jne.gob.pe/voto/images/icomoon/SVG/bot_reportes-01.svg" alt="icono compara" style="height:48px; width:48px;" />
+                                    </div>
+                                    <div class="menu-name">
+                                        <span class="menu-label-name">Reportes Electorales</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-principal">
+                        <a class="menu-link" href="Debates.html">
+                            <div class="menu-icon">
+                                <em class="main-politics-button  "></em>
+                            </div>
+                            <div class="menu-name">
+                                <span class="menu-label-name">Debates / Agenda parlamentaria</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="menu-principal">
+                        <a class="menu-link" href="Busqueda.html">
+                            <div class="menu-icon">
+                                <em class="main-searcher"></em>
+                            </div>
+                            <div class="menu-name">
+                                <span class="menu-label-name">Búsqueda Personalizada</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="menu-principal">
+                        <a class="menu-link" href="https://votoinformado.jne.gob.pe/voto/PactoEtico">
+                            <div class="menu-icon">
+                                <em class="main-candidates-button"></em>
+                            </div>
+                            <div class="menu-name">
+                                <span class="menu-label-name">Tribunal de Honor</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="menu-principal">
+                        <a class="menu-link" href="https://votoinformado.jne.gob.pe/voto/AgendaParlamentaria">
+                            <div class="menu-icon">
+                                <em class="main-resume-button"></em>
+                            </div>
+                            <div class="menu-name">
+                                <span class="menu-label-name">Agenda Parlamentaria</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="menu-principal">
+                        <a class="menu-link" href="https://votoinformado.jne.gob.pe/voto/ConsultaVecinal">
+                            <div class="menu-icon"><em class="main-info"></em></div>
+                            <div class="menu-name">
+                                <span class="menu-label-name">Información electoral</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div> -->
+
+
+            <script type="text/javascript">
+                function openSubMenu(value) {
+                    let submenu = value.parentElement.children[1];
+                    $(submenu).toggleClass('closed');
+                }
+            </script>
+            <!-- =============================================== -->
+            <div class="d-flex page-container">
+
+                <div class="main-section personal-candidate">
+
+
+                    <div class="title-principal-page d-flex justify-content-center">
+                        Elecciones presidenciales
+                    </div>
+                    <div class="title-principal-page d-flex justify-content-center">
+                        <span class="tituloop">Candidatos</span>
+                    </div>
+
+                    <!-- Lista de OP -->
+                    <div class="container-options-body lista-op">
+                        <div class="card-page card-red">
+                            <a href="candidato.html">
+                                <div class="images-container">
+                                    <div class="personal-image" style="border-radius: 0%;">
+                                        <span><img src="./public/img/candidato/ALAN.jpg" /></span>
+                                    </div>
+                                </div>
+                                <div class="detail-card">
+                                    <span class="name-partide">ALAN GARCIA</span>
+                                    <span class="view-more">
+                                        APRA
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-page card-red">
+                            <a href="candidato">
+                                <div class="images-container">
+                                    <div class="personal-image" style="border-radius: 0%;">
+                                        <span><img src="./public/img/candidato/FUJIMORI.jpg" /></span>
+                                    </div>
+                                </div>
+                                <div class="detail-card">
+                                    <span class="name-partide">KEIKO FUJIMORI</span>
+                                    <span class="view-more">
+                                        FUERZA POPULAR
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-page card-red">
+                            <a href="candidato">
+                                <div class="images-container">
+                                    <div class="personal-image" style="border-radius: 0%;">
+                                        <span><img src="./public/img/candidato/TOLEDO.png" /></span>
+                                    </div>
+                                </div>
+                                <div class="detail-card">
+                                    <span class="name-partide">ALEJANDRO TOLEDO</span>
+                                    <span class="view-more">
+                                        PERU POSIBLE
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            © JNE. Todos los Derechos Reservados 2021
+        </div>
+    </div>
+</body>
+
+</html>

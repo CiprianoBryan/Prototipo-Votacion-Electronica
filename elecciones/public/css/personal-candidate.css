@@ -1,0 +1,155 @@
+.personal-candidate {
+    width: 100%;
+    padding: 50px 50px;
+}
+
+.card-page .header-candidate {
+    min-height: 220px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.card-page .header-candidate .candidate-images {
+    width: 100%;
+    max-width: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.card-page .header-candidate .candidate-images .name-candidate {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    font-family: 'Raleway', sans-serif;
+}
+
+.card-page .header-candidate .candidate-images .images-container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 290px;
+    margin-bottom: 10px;
+}
+
+.politic-image {
+    height: 75px;
+    position: absolute;
+    width: 75px;
+    display: flex;
+    align-items: center;
+    top: 0;
+    right: 5px;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #E73A4F;
+    color: #FFFFFF;
+    font-size: 23.5px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.card-page .header-candidate .candidate-politic-images {
+    max-width: 240px;
+    width: 100%;
+    border: 1px solid #9C9C9C;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    padding: 15px;
+}
+
+.card-page .header-candidate .candidate-politic-images .images-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.card-page .header-candidate .candidate-politic-images .name-candidate {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.card-page .header-candidate .candidate-politic-images .images-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.politic-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.personal-image {
+    width: 100%;
+    max-width: 185px;
+    /* height: 200px; */
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.personal-image img {
+    width: 100%;
+}
+
+.card-page .header-candidate .candidate-info {
+    background-color: #F6F6F6;
+    flex-direction: column;
+    align-items: flex-start;
+    width: calc(100% - 500px);
+    min-height: 170px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1080px) {
+    .card-page .header-candidate {
+        justify-content: center;
+    }
+    .card-page .header-candidate .candidate-info {
+        width: calc(100%);
+        margin-top: 10px;
+        min-height: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    .personal-candidate {
+        width: 100%;
+        padding: 50px 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .personal-candidate {
+        width: 100%;
+        padding: 50px 10px;
+    }
+    .card-page .header-candidate .candidate-images,
+    .card-page .header-candidate .candidate-info {
+        padding: 0px;
+    }
+}

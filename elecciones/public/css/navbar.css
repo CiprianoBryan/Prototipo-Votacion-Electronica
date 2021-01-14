@@ -1,0 +1,82 @@
+.navbar {
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 60;
+    position: fixed;
+    top: 0;
+}
+
+.navbar .logo-navbar {
+    width: 145px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .logo-navbar img {
+    width: auto;
+    max-height: 90%;
+}
+
+.navbar .logo-navbar img:first-child {
+    margin-right: 5px;
+}
+
+.navbar .menu-navbar {
+    display: flex;
+    align-items: center;
+}
+
+
+/* .navbar .menu-navbar .icon-block{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: #9C9C9C;
+    font-family: 'Raleway', sans-serif;
+    background-color: #f3f3f3;
+    border-radius: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+} */
+
+.navbar .menu-navbar .profile-block {
+    height: 45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    border: 1px solid #9C9C9C;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.navbar .menu-navbar .profile-block img {
+    width: 100%;
+}
+
+.navbar .menu-navbar .btn-group {
+    margin-right: 20px;
+}
+
+@media (max-width: 576px) {
+    .navbar .menu-navbar .icon-block {
+        display: none;
+    }
+    .navbar .menu-navbar .profile-block {
+        margin-right: 5px;
+    }
+    .navbar .menu-navbar .btn-group {
+        margin-right: 2.5px;
+    }
+}
