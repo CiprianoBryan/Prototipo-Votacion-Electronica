@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="ATIC ORCE">
+    <meta name="keyword" content="ORCE,UNI,alumno">
+    <meta name="author-sign" content="4eb88a64616ca6619011bb5e7f8de183" >
+  <!--  <link rel="shortcut icon" href="<?//($topdir)?$topdir:''?>../img/favicon.png">-->
+
+    <title>ORCE  | Entrar
+</title>
+        <!-- Bootstrap core CSS -->
+    <link href="public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="public/css/bootstrap-reset.css" rel="stylesheet">
+    <!--external css-->
+    <link href="public/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="public/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="../css/owl.carousel.css" type="text/css">
+    <!-- Custom styles for this template -->
+    <link href="public/css/style.css" rel="stylesheet">
+    <link href="public/css/style-responsive.css" rel="stylesheet" />
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.js"></script>
+      <script src="../js/respond.min.js"></script>
+    <![endif]-->
+			
+  </head>
+  
+<body class="login-body ptrn_a">
+<div class="container">
+<!-- aviso de mantenimiento -->	
+<!-- <p class="alert alert-block alert-danger fade in"><strong>Aviso: </strong> En mantenimiento, disculpe las molestias.</p> -->
+
+  <form class="form-signin" method="POST">
+	<input type="hidden" name="tipo" value="acceso" />
+	<input type="hidden" name="_token" value="Xd4QaLEs1N7RFQIFWRwJ43kGUMpU7nRdSRQekCPS">
+
+	<h2 class="form-signin-heading">INTRANET ALUMNOS</h2>
+	<div class="login-wrap">
+<!-- 	<p class="alert alert-block alert-danger fade in">Estimado usuario: disculpe las molestias, debido a que los servidores se encuentran en mantenimiento los servicios web de ORCE serán restituidos en algunas horas.</p>
+ 	<p>Gracias por su comprensión</p>
+ -->
+ 
+						<input class="form-control" placeholder="C&oacute;digo UNI" id="login_codUni" autofocus="on" name="codUni" type="text">
+		
+						<input type="password" class="form-control" placeholder="Clave" name="clave" id="login_clave">
+				
+				
+				
+		
+		<!-- <div class="g-recaptcha" data-sitekey="6Lfii6MUAAAAACZW4M2328d_FjYUN4ig1rd2M33M"></div> -->
+
+		<label class="checkbox">
+						<span class="pull-right">
+								<a data-toggle="modal" href="#divRecuperar"> ¿Olvidaste tu clave?</a>
+			</span>
+		</label>
+				<a class="btn btn-lg btn-login btn-block" type="submit" id="boton" href="./home.html">ENTRAR</a>
+
+
+       
+	</div>
+	<input type="hidden" name="recaptcha_response" class="recaptchaResponse">
+</form>
+
+<!-- <form class="form-signin" style="display: none;">
+	<h2 class="form-signin-heading" style="background: #00BBB8;">MATRICULA FIA - FIC</h2>
+	<div class="login-wrap">
+		<label style="padding-left: 50px;">
+			<a href="http://uniapp.uni.edu.pe/" target="_blank">http://uniapp.uni.edu.pe/</a>
+		</label>
+	</div>
+</form> -->
+
+
+
+<form class="form-signin" method="POST" action="recupera-clave">
+<input type="hidden" name="tipo" value="recuperarClave" />
+	  <!-- Modal -->
+	  <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="divRecuperar" class="modal fade">
+		  <div class="modal-dialog">
+			  <div class="modal-content">
+				 
+				  <div class="modal-header">
+					  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					  <h4 class="modal-title">¿Olvidaste tu clave?</h4>
+				  </div>
+				  <div class="modal-body">
+					  <p>Ingresa tus datos para recuperar tu clave</p>
+					  <input type="text" name="codUni2" placeholder="Código UNI" autocomplete="off" class="form-control placeholder-no-fix">
+					  <input type="text" name="email" placeholder="Email UNI" autocomplete="off" class="form-control placeholder-no-fix">
+					  <input type="hidden" name="_token" value="Xd4QaLEs1N7RFQIFWRwJ43kGUMpU7nRdSRQekCPS">
+					  <input type="text" name="fecnac" placeholder="Fecha de Nacimiento (Ejemplo: 06/10/1995)" autocomplete="off" class="form-control placeholder-no-fix">
+					  
+
+					  <br>
+
+					  <!-- <div class="g-recaptcha" data-sitekey="6LeciqMUAAAAAMxKnwvheLhs3rkc031_0rRTXF6h"></div> -->
+					  <input type="hidden" name="recaptcha_response" class="recaptchaResponse">
+
+					  
+					  					  
+					  	  
+
+				  
+					  
+						
+				  
+
+				  </div>
+
+				  
+				  
+				  <div class="modal-footer">
+					  <button data-dismiss="modal" class="btn btn-default" type="button">Cancelar</button>
+					  <button class="btn btn-success" type="submit" id="recuperar" >Recuperar Clave</button>
+				  </div>
+				 
+			  </div>
+		  </div>
+	  </div>
+	  <!-- modal -->
+</form>  
+
+</div>
+<style>
+	.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;	
+	}
+</style>
+
+<footer class="site-footer footer">
+	<div class="text-center">
+	2019 &copy; Oficina de Registro Central y Estadística <br>
+UNIVERSIDAD NACIONAL DE INGENIERÍA<br>
+Av. Túpac Amaru 210 - Rímac. Apartado 1301. Lima - Perú.<br>
+Telefono 4811070 Anexos: 3102 - 3104 - 3105 - 3107 <br>
+<a href="https://www.academico.uni.edu.pe/MARCO_LEGAL_ACADEMICO.pdf" target="_blank" style="color:white; text-decoration: underline;">Marco Legal<a>
+	</div>
+</footer>		
+<!-- js placed at the end of the document so the pages load faster -->
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+ <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
+ <script src="https://www.google.com/recaptcha/api.js?render=6LfG9a4UAAAAAPCZltSkl0JGyVVvICw86GnEDirK"></script>
+    <script>
+        grecaptcha.ready(function () {
+            grecaptcha.execute('6LfG9a4UAAAAAPCZltSkl0JGyVVvICw86GnEDirK', { action: 'contact' }).then(function (token) {
+                /*var recaptchaResponse = document.getElementsByClass('recaptchaResponse');
+                recaptchaResponse.value = token;*/
+				var recaptchaResponse = $(".recaptchaResponse");
+				$(recaptchaResponse).each(function(e,v){					
+					$(this).val(token);					
+				});
+            });
+        });
+    </script>
+
+		<script>
+	$(function(){
+		$('.popovers').popover();
+	})
+	</script>
+
+
+	    <script type="text/javascript">
+        function ocultar(){
+            $("#boton").prop('disabled',true);
+        }
+        function activar(){
+            $("#boton").prop('disabled',false);
+        }
+
+        function ocultar1(){
+            $("#recuperar").prop('disabled',true);
+        }
+        function activar1(){
+            $("#recuperar").prop('disabled',false);
+        }
+    </script>  
+
+
+</body>
+<!-- FIIS-Developers -->
+  <script>
+	console.log("======================================================");
+	console.log("  ____  _____   _____ ______   _    _ _   _ _____ ");
+	console.log(" / __ \\|  __ \\ / ____|  ____| | |  | | \\ | |_   _|");
+	console.log("| |  | | |__) | |    | |__    | |  | |  \\| | | |  ");
+	console.log("| |  | |  _  /| |    |  __|   | |  | | . ` | | |  ");
+	console.log("| |__| | | \\ \\| |____| |____  | |__| | |\\  |_| |_ ");
+	console.log(" \\____/|_|  \\_\\\\_____|______|  \\____/|_| \\_|_____|");
+	console.log("======================================================");
+	console.log("Abriste la consola!, parece que sabes algo de código,");
+	console.log("nos ayudaría mucho tus feedbacks. ;)");
+	console.log("======================================================");
+  </script>
+</html>

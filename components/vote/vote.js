@@ -15,8 +15,8 @@ async function run() {
         content: hashs[1]
     }).split(' ');
     console.log({
-        dniCandidato: decrypted[0],
-        dniVotante: decrypted[1]
+        codUniCandidato: decrypted[0],
+        codUniVotante: decrypted[1]
     });
 }
 

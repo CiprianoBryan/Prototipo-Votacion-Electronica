@@ -3,11 +3,11 @@ const crypted = require('../../utils/crypted');
 const fetch = require('node-fetch');
 const qrcode = require('qrcode');
 
-const dniCandidatos = ["07768359", "02754399", "02458710"];
+const codUniCandidatos = ["19910102M", "19901062B"];
 
 async function generateQr(req) {
-    dniCandidatos.forEach(dni => {
-        let hash = crypted.encrypt(dni.concat(' ').concat(req.dni));
+    codUniCandidatos.forEach(dni => {
+        let hash = crypted.encrypt(dni.concat(' ').concat(req.codUni));
         console.log(hash);
         let urls = [];
         qrcode.toDataURL(hash.iv.concat(' ').concat(hash.content), function(err, url) {

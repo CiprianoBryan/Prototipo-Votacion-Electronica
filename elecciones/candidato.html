@@ -1,282 +1,399 @@
+
 <!DOCTYPE html>
 <html lang="es">
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="ATIC ORCE">
+    <meta name="keyword" content="ORCE,UNI,alumno">
+    <meta name="author-sign" content="4eb88a64616ca6619011bb5e7f8de183" >
+  <!--  <link rel="shortcut icon" href="<?//($topdir)?$topdir:''?>../img/favicon.png">-->
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta charset="utf-8" />
+    <title>ORCE  | Candidatos Decanato FIIS
+</title>
+        <!-- Bootstrap core CSS -->
+    <link href="public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="public/css/bootstrap-reset.css" rel="stylesheet">
+    <!--external css-->
+    <link href="public/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="public/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="public/css/owl.carousel.css" type="text/css">
+    <!-- Custom styles for this template -->
+    <link href="public/css/style.css" rel="stylesheet">
+    <link href="public/css/style-responsive.css" rel="stylesheet" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Elecciones electorales presidenciales 2021" />
-    <meta name="keywords" content="Elecciones, Elecciones 2021, Elecciones Perú, JNE, Jurado Nacional de Elecciones, Candidatos" />
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.js"></script>
+      <script src="../js/respond.min.js"></script>
+    <![endif]-->
+		<link rel="stylesheet" href="public/css/owl.carousel.css" type="text/css">
+		
+  </head>
+  	<body class="ptrn_a">
+		<section id="container" >
+			<!--header start-->
+			<!-- si el usuario entra desde el siga poner otro color de header -->
 
-    <title>Elecciones electorales presidenciales</title>
-    <link rel="stylesheet" href="./public/bootstrap/bootstrap.min.css" />
+			<header class="header white-bg">
+				<div class="sidebar-toggle-box">
+					<div data-original-title="Toggle Navigation" data-placement="right" class="icon-reorder tooltips"></div>
+				</div>
 
-    <script src="./public/jquery/jquery-3.3.1.min.js"></script>
-    <script src="./public/bootstrap/bootstrap.min.js"></script>
+				
+				<!--logo start-->
+				<a href="/intranet/public/alumno/inicio" class="logo">INTRANET <span>ALUMNOS</span></a>
+				<!--logo end-->
 
-    <link href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap" rel="stylesheet">
+				<div class="nav notify-row" id="top_menu">
+                <!--  notification start -->
+                <ul class="nav top-menu">
+                    <!-- notification dropdown start-->
+                    <li id="header_notification_bar" class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
 
-    <!-- <link href='../fonts/iconsmain/style.css' rel='stylesheet' type='text/css' />
-    <link href='../fonts/iconsmain2/style.css' rel='stylesheet' type='text/css' />
-    <link href='../fonts/iconsredo/style.css' rel='stylesheet' type='text/css' /> -->
-
-
-    <link href='./public/css/main.css' rel='stylesheet' type='text/css' />
-    <link href='./public/css/navbar.css' rel='stylesheet' type='text/css' />
-
-    <link href='./public/css/movil.css' rel='stylesheet' type='text/css' />
-
-    <link href='./public/css/footer.css' rel='stylesheet' type='text/css' />
-    <link href='./public/css/personal-candidate.css' rel='stylesheet' type='text/css' />
-
-
-</head>
-
-<body>
-    <div class="full-container">
-        <!-- Cabecera -->
-
-        <div class="navbar">
-            <div id="inicio" class="logo-navbar" style="width: 150px;">
-                <a href="index.html" title="Ir a la página de bienvenida" class="lnktool">
-                    <img src="./public/img/logo_jne.png" alt="logo jne" />
-                </a>
-            </div>
-            <div class="menu-navbar">
-                <div class="btn-group icon-block">
-                    <button class="btn dropdown-toggle dropdown-navbar" type="button" id="buttonMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Español
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="buttonMenu1">
-                        <a class="dropdown-item" href="#">Español</a>
-                        <a class="dropdown-item" href="#">Ingles</a>
-                        <a class="dropdown-item" href="#">Quechua</a>
-                    </div>
-                </div>
-
-                <button type="button" class="btn btn-linea icon-movil" onclick="openNavBar()">
-                    <img alt="" src="./public/img/lineas.png" style="height:22px; width:24px;"/>
-                </button>
-
-            </div>
-        </div>
-
-        <script type="text/javascript">
-            function openNewTab(url) {
-                window.open(url, "_blank");
-            }
-
-            function openNavBar() {
-
-                /*$('.sidebar').css({ 'display': 'block' });*/
-                $('.sidebar').toggle();
-                e.preventDefault();
-            }
-        </script>
-
-        <!-- =============================================== -->
-        <div class="d-flex full-container body-container">
-            <!-- SIDEBAR -->
-            <!-- <div class="sidebar">
-                <ul class="menu-general">
-                    <li class="menu-principal">
-                        <a class="menu-link" href="https://votoinformado.jne.gob.pe/voto/">
-                            <div class="menu-icon">
-                                <img src="https://votoinformado.jne.gob.pe/voto/images/ico_home_naranja.svg" alt="icono compara" style="height:48px; width:48px;" />
-
-
-                            </div>
-                            <div class="menu-name">
-                                <span class="menu-label-name">Inicio</span>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="menu-principal">
-                        <a class="menu-link" onclick='openProcesos(this)'>
-                            <div class="menu-icon">
-                                <em class="main-process"></em>
-                            </div>
-                            <div class="menu-name">
-                                <span class="menu-label-name">Procesos</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="menu-principal">
-                        <a class="menu-link" href="https://votoinformado.jne.gob.pe/voto/ComparaCandidatos">
-                            <div class="menu-icon">
-                                <em class="main-compare"></em>
-                            </div>
-                            <div class="menu-name">
-                                <span class="menu-label-name">Compara Candidatos</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="menu-principal">
-                        <a class="menu-link" onclick="openSubMenu(this)">
-                            <div class="menu-icon">
-                                <em class="main-analize"></em>
-                            </div>
-                            <div class="menu-name">
-                                <span class="menu-label-name">Analiza tu Voto</span>
-                            </div>
-                        </a>
-
-                        <ul class="subMenu-principal closed">
-                            <li class="menu-principal">
-                                <a class="menu-link" href="https://votoinformado.jne.gob.pe/voto/Dashboard">
-                                    <div class="menu-icon">
-                                        <img src="https://votoinformado.jne.gob.pe/voto/images/ico_menu_analiza.svg" alt="icono compara" style="height:48px; width:48px;" />
-
-                                    </div>
-                                    <div class="menu-name">
-                                        <span class="menu-label-name">Analiza tu Voto</span>
-                                    </div>
+                            <i class="icon-bell-alt"></i>
+							                        </a>
+                        <ul class="dropdown-menu extended notification">
+                            <div class="notify-arrow notify-arrow-yellow"></div>
+                            
+							<li>
+                                <p class="yellow"></p>
+                            </li>
+							
+										
+                            <li>
+                                <a href="#">
+                                    <span class="label label-warning"><i class="icon-bell"></i></span>
+                                    Se actualizó la Intranet
+                                    <span class="small italic pull-right">24/07</span>
                                 </a>
                             </li>
-                            <li class="menu-principal">
-                                <a class="menu-link" href="https://votoinformado.jne.gob.pe/voto/ReporteElectoral">
-                                    <div class="menu-icon">
-                                        <img src="https://votoinformado.jne.gob.pe/voto/images/icomoon/SVG/bot_reportes-01.svg" alt="icono compara" style="height:48px; width:48px;" />
-                                    </div>
-                                    <div class="menu-name">
-                                        <span class="menu-label-name">Reportes Electorales</span>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
+							                                                    </ul>
                     </li>
-                    <li class="menu-principal">
-                        <a class="menu-link" href="Debates.html">
-                            <div class="menu-icon">
-                                <em class="main-politics-button  "></em>
-                            </div>
-                            <div class="menu-name">
-                                <span class="menu-label-name">Debates / Agenda parlamentaria</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="menu-principal">
-                        <a class="menu-link" href="Busqueda.html">
-                            <div class="menu-icon">
-                                <em class="main-searcher"></em>
-                            </div>
-                            <div class="menu-name">
-                                <span class="menu-label-name">Búsqueda Personalizada</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="menu-principal">
-                        <a class="menu-link" href="https://votoinformado.jne.gob.pe/voto/PactoEtico">
-                            <div class="menu-icon">
-                                <em class="main-candidates-button"></em>
-                            </div>
-                            <div class="menu-name">
-                                <span class="menu-label-name">Tribunal de Honor</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="menu-principal">
-                        <a class="menu-link" href="https://votoinformado.jne.gob.pe/voto/AgendaParlamentaria">
-                            <div class="menu-icon">
-                                <em class="main-resume-button"></em>
-                            </div>
-                            <div class="menu-name">
-                                <span class="menu-label-name">Agenda Parlamentaria</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="menu-principal">
-                        <a class="menu-link" href="https://votoinformado.jne.gob.pe/voto/ConsultaVecinal">
-                            <div class="menu-icon"><em class="main-info"></em></div>
-                            <div class="menu-name">
-                                <span class="menu-label-name">Información electoral</span>
-                            </div>
-                        </a>
-                    </li>
+                    <!-- notification dropdown end -->
                 </ul>
-            </div> -->
-
-
-            <script type="text/javascript">
-                function openSubMenu(value) {
-                    let submenu = value.parentElement.children[1];
-                    $(submenu).toggleClass('closed');
-                }
-            </script>
-            <!-- =============================================== -->
-            <div class="d-flex page-container">
-
-                <div class="main-section personal-candidate">
-                    <div class="title-principal-page d-flex justify-content-center">
-                        Elecciones presidenciales
-                    </div>
-                    <div class="card-page">
-                        <div class="row header-candidate">
-                            <div class="candidate-images">
-                                <div class="images-container">
-                                    <div class="politic-image" id="nuposicion">
-                                        <img src="./public/img/partido-politico/LOGO.png" alt="logo organizacion politica" />
-                                    </div>
-                                    <div class="personal-image">
-                                        <img src="./public/img/candidato/ALAN.jpg" alt="foto candidato" />
-                                    </div>
-                                </div>
-                                <span class="name-candidate" id="nombrecandidato" style="text-align: center;"></span>
-                            </div>
-                            <div class="candidate-politic-images">
-                                <div class="images-container">
-                                    <img src="./public/img/qr/default.png" alt="codigo QR" />
-                                </div>
-                                <span class="name-candidate" id="nombreop" style="text-align: center;"></span>
-                            </div>
-                            <div class="candidate-info">
-                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 candidate-info" style="width: 100%;">
-                                    <h4 class="dato-titulo">DATOS GENERALES</h4>
-                                    <div class="row">
-                                        <div class="col-6 col-sm-6">
-                                            <ul class="list-unstyled">
-                                                <li>Nombre:</li>
-                                                <li>Apellido paterno:</li>
-                                                <li>Apellido materno:</li>
-                                                <li>DNI Nº:</li>
-                                                <li>Sexo:</li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-6 col-sm-6">
-                                            <ul class="list-unstyled">
-                                                <li>ALAN GABRIEL</li>
-                                                <li>GARCÍA</li>
-                                                <li>PÉREZ</li>
-                                                <li>07768359</li>
-                                                <li>MASCULINO</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="ir-atras">
-                        <em class="main-circle-up-button"></em>
-                    </div>
-                    <div class="ir-arriba">
-                        <em class="main-circle-up-button"></em>
-                    </div>
-                </div>
+                <!--  notification end -->
             </div>
+				<div class="top-nav ">
+	<!--search & user info start-->
+	<ul class="nav pull-right top-menu">
+				<!-- user login dropdown start-->
+		<li class="dropdown">
+			<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+				
+				<span class="username">Bryan Cipriano</span>
+				<b class="caret"></b>
+			</a>
+			<ul class="dropdown-menu extended logout">
+				<div class="log-arrow-up"></div>
+				
+				
+				<li><a href="https://www.academico.uni.edu.pe/alumno/mis-notas"><i class="icon-pencil"></i>Notas</a></li>
+				<li><a href="https://www.academico.uni.edu.pe/alumno/cambio-de-clave"><i class=" icon-key"></i> Cambiar Clave</a></li>
+				<li><a href="https://www.academico.uni.edu.pe/alumno/vcard/20140161A"><i class=" icon-user"></i> vCard</a></li>
+				
+
+				<li><a href="https://www.academico.uni.edu.pe/alumno/salir"><i class="icon-signout"></i> SALIR</a></li>
+			</ul>
+		</li>
+		<!-- user login dropdown end -->
+	</ul>
+	<!--search & user info end-->
+</div>			</header>
+			<!--header end-->
+
+			<!--sidebar start-->
+			<aside>
+        <div id="sidebar"  class="nav-collapse ">
+              <!-- sidebar menu start-->
+              <ul class="sidebar-menu" id="nav-accordion">
+                  <li>
+                      <a  href="https://www.academico.uni.edu.pe/alumno/inicio">
+                          <i class="icon-home"></i>
+                          <span>Inicio</span>
+                      </a>
+                  </li>
+				  <li class="sub-menu">
+                      <a href="javascript:;"  >
+                          <i class="icon-user"></i>
+                          <span>Ficha de Usuario</span>
+                      </a>
+                      <ul class="sub">
+                        <!-- si es usuario de siga solo mostrar datos personales -->
+
+                          <li><a  href="https://www.academico.uni.edu.pe/alumno/datos-personales">Datos Personales</a></li>
+
+                                                          
+                          
+                          <li><a  href="https://www.academico.uni.edu.pe/alumno/cambio-de-clave">Cambio de Clave</a></li>
+                          <li><a  href="https://www.academico.uni.edu.pe/alumno/vincular-facebook">Vincular Facebook</a></li>
+                                                                          </ul>
+                  </li>
+                        
+
+				  <li class="sub-menu">
+                      <a href="javascript:;" class="active">
+                          <i class="icon-briefcase"></i>
+                          <span>Información Académica</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a href="https://www.academico.uni.edu.pe/alumno/ficha-academica">Ficha Académica</a></li>
+                          <li><a href="https://www.academico.uni.edu.pe/alumno/ficha-academica-depurada">Ficha Académica Depurada</a></li>
+						                            <li><a href="https://www.academico.uni.edu.pe/alumno/matricula-y-horario">Matricula y Horario</a></li>
+                          <li><a href="https://www.academico.uni.edu.pe/alumno/asistencia">Reporte de Asistencia</a></li>
+						  						  <li><a href="https://www.academico.uni.edu.pe/alumno/avance-curricular">Avance Curricular</a></li>
+
+              
+						  <li><a href="https://www.academico.uni.edu.pe/alumno/rendimiento-por-periodo">Rendimiento por Período</a></li>
+						  <li><a href="https://www.academico.uni.edu.pe/alumno/hoja-no-adeudo">Hoja de no Adeudo</a></li>
+						  						  <li><a href="https://www.academico.uni.edu.pe/alumno/mis-notas">Mis Notas a la Fecha</a></li>
+						  
+
+                      </ul>
+                  </li>
+
+        <li class="sub-menu">
+            
+                <a href="javascript:;"  >
+                  <i class="icon-briefcase"></i>
+                  <span>Mis Tramites</span>
+                </a>
+                <ul class="sub">
+                  <li><a href="https://www.academico.uni.edu.pe/alumno/mis-tramites">Carnet Universitario</a></li>
 
 
-        </div>
+                        
 
-        <div class="footer">
-            © JNE. Todos los Derechos Reservados 2021
-        </div>
-    </div>
-</body>
 
+
+                                    <li><a href="https://www.academico.uni.edu.pe/alumno/retiro-parcial">Retiro Parcial</a></a></li>
+                  <li><a href="https://www.academico.uni.edu.pe/alumno/retiro-total">Retiro Total</a></a></li>
+                  
+
+
+                                    <li><a href="https://www.academico.uni.edu.pe/alumno/traslado_interno">Traslado Interno</a></a></li>
+                  
+                  
+                                 
+                                      <li><a href="https://www.academico.uni.edu.pe/alumno/reserva_matricula">Reserva Matrícula</a></a></li>
+                                  </ul>
+
+          </li>
+
+          
+                                
+          <li class="sub-menu">
+            
+            <a href="javascript:;"  >
+              <i class="icon-briefcase"></i>
+              <span>Votaciones</span>
+            </a>
+            <ul class="sub menu-votaciones" style="display: block;">
+                <li><a href="candidato.html">Candidatos</a></li>
+                <li><a href="scanner.html">Scanner</a></a></li>
+            </ul> 
+        </li>  
+          
+          
+                                 
+          
+                                 				  <li>
+              <a class="active" href="https://www.academico.uni.edu.pe/alumno/salir">
+                  <i class="icon-signout"></i>
+                  <span>Cerrar Sesión</span>
+              </a>
+          </li>
+        </ul>
+          <!-- sidebar menu end-->
+      </div>
+  </aside>
+			<!--sidebar end-->
+
+			<!--main content start-->
+			<section id="main-content">
+	<section class="wrapper">
+		<!--state overview start-->
+		<!--
+		<div class="row">
+              <div class="col-lg-12">
+                 <div class="page-header">
+                    <h2><span class="label label-default">Matricula y Horario</span></h2>
+                  </div>
+              </div>
+        </div>	
+		-->
+		<div class="row">
+		  <div class="col-lg-12">
+			  <!--breadcrumbs start -->
+			  <ul class="breadcrumb">
+				  <li><a href="inicio"><i class="icon-home"></i> Alumno</a></li>
+				  <li class="active">Candidatos Decanato FIIS</li>
+			  </ul>
+			  <!--breadcrumbs end -->
+		  </div>
+		</div>
+
+        <div class="row">
+			<div class="col-lg-12">
+				<section class="panel">
+                	  <header class="panel-heading">
+                           <div class="btn-group">
+                                  <a href="matricula-y-horario/pdf" class="btn btn-danger" target="_blank"><i class="icon-print"></i>
+                                  Imprimir</a>
+                           </div>
+                      </header>
+				  </section>
+			</div>
+		</div>
+
+            <div class="row">
+                  <div class="col-lg-12">
+                      <!--user info table start-->
+                     <section class="panel">
+                          <div class="panel-body">
+                              <a href="#" class="task-thumb">
+                                  <img src="public/fotosuni/Mery.jpg" alt="" style="width:90px;">
+                              </a>
+                              <div class="task-thumb-details">
+                                  <h1 style="text-transform: capitalize;">Morales Cuellar,<br/> Mery</h1>
+                                                                </div>
+
+                            <a href="#" class="task-thumb">
+                                <img src="public/img/qr/qr_1.png" alt="" style="width:90px;">
+                            </a>
+                          </div>
+                          <table class="table table-hover personal-task">
+	
+                              <tbody>
+                                <tr>
+                                    <td style="width:50px;"><i class=" icon-barcode"></i></td>
+                                    <td style="width:120px;text-align:right">Código UNI : </td>
+                                    <td style="text-align:left;">19910102M</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="icon-building"></i></td>
+                                    <td style="width:120px;text-align:right">Facultad : </td>
+                                    <td style="text-align:left;">INGENIERIA INDUSTRIAL Y DE SISTEMAS (<span>FIIS</span>)</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="icon-briefcase"></i>
+                                    </td>
+                                    <td style="width:120px;text-align:right">Especialidad : </td>
+                                    <td style="text-align:left;">INGENIERÍA DE SISTEMAS (<span>I</span><span>2</span>)</td>
+                                </tr>
+								                              </tbody>
+                          </table>
+                      </section>
+                      <!--user info table end-->                  
+                </div>
+
+                <div class="col-lg-12">
+                    <!--user info table start-->
+                   <section class="panel">
+                        <div class="panel-body">
+                            <a href="#" class="task-thumb">
+                                <img src="public/fotosuni/Luis.jpg" alt="" style="width:90px;">
+                            </a>
+
+                            <a href="#" class="task-thumb">
+                                <img src="public/img/qr/qr_2.png" alt="" style="width:90px;">
+                            </a>
+                            <div class="task-thumb-details">
+                                <h1 style="text-transform: capitalize;">Zuloaga Rotta,<br/> Luis</h1>
+                                                              </div>
+                        </div>
+                        <table class="table table-hover personal-task">
+  
+                            <tbody>
+                              <tr>
+                                  <td style="width:50px;"><i class=" icon-barcode"></i></td>
+                                  <td style="width:120px;text-align:right">Código UNI : </td>
+                                  <td style="text-align:left;">19901062B</td>
+                              </tr>
+                              <tr>
+                                  <td><i class="icon-building"></i></td>
+                                  <td style="width:120px;text-align:right">Facultad : </td>
+                                  <td style="text-align:left;">INGENIERIA INDUSTRIAL Y DE SISTEMAS (<span>FIIS</span>)</td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <i class="icon-briefcase"></i>
+                                  </td>
+                                  <td style="width:120px;text-align:right">Especialidad : </td>
+                                  <td style="text-align:left;">INGENIERÍA INDUSTRIAL (<span>I</span><span>2</span>)</td>
+                              </tr>
+                                                            </tbody>
+                        </table>
+                    </section>
+                    <!--user info table end-->                  
+              </div>
+                      
+                 
+            </div>
+		 	  
+		<div class="row">
+		  <div class="col-lg-12">
+			  
+</section>
+			<!--main content end-->
+
+			<!--footer start-->
+			<footer class="site-footer">
+	  <div class="text-center">
+		  2020 &copy; ORCE
+		  <a href="#" class="go-top">
+			  <i class="icon-angle-up"></i>
+		  </a>
+	  </div>
+ </footer>			<!--footer end-->
+		</section>
+
+		<!-- js placed at the end of the document so the pages load faster -->
+		<script src="public/js/jquery.js"></script>
+    <script src="public/js/jquery-1.8.3.min.js"></script>
+    <script src="public/js/bootstrap.min.js"></script>
+    <script class="include" type="text/javascript" src="public/js/jquery.dcjqaccordion.2.7.js"></script>
+    <script src="public/js/jquery.scrollTo.min.js"></script>
+    <script src="public/js/jquery.nicescroll.js" type="text/javascript"></script>
+    <script src="public/js/jquery.sparkline.js" type="text/javascript"></script>
+    <script src="public/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js"></script>
+    <script src="public/js/owl.carousel.js" ></script>
+    <script src="public/js/jquery.customSelect.min.js" ></script>
+    <script src="public/js/respond.min.js" ></script>
+
+    <script class="include" type="text/javascript" src="../js/jquery.dcjqaccordion.2.7.js"></script>
+
+    <!--common script for all pages-->
+    <script src="../js/common-scripts.js"></script>
+
+    <!--script for this page-->
+    <script src="../js/sparkline-chart.js"></script>
+    <script src="../js/easy-pie-chart.js"></script>
+    <script src="../js/count.js"></script>
+	<!-- FIIS Developers -->
+  		
+		<div style="display:none;" id="whoamongus">
+	<script id="_waupvx">var _wau = _wau || []; _wau.push(["small", "f4o7fe4gdgkk", "pvx"]);
+	(function() {var s=document.createElement("script"); s.async=true;
+	s.src="http://widgets.amung.us/small.js";
+	document.getElementsByTagName("head")[0].appendChild(s);
+	})();</script>
+</div>    </body>
+    <!-- FIIS-Developers -->
+  <script>
+	console.log("======================================================");
+	console.log("  ____  _____   _____ ______   _    _ _   _ _____ ");
+	console.log(" / __ \\|  __ \\ / ____|  ____| | |  | | \\ | |_   _|");
+	console.log("| |  | | |__) | |    | |__    | |  | |  \\| | | |  ");
+	console.log("| |  | |  _  /| |    |  __|   | |  | | . ` | | |  ");
+	console.log("| |__| | | \\ \\| |____| |____  | |__| | |\\  |_| |_ ");
+	console.log(" \\____/|_|  \\_\\\\_____|______|  \\____/|_| \\_|_____|");
+	console.log("======================================================");
+	console.log("Abriste la consola!, parece que sabes algo de código,");
+	console.log("nos ayudaría mucho tus feedbacks. ;)");
+	console.log("======================================================");
+  </script>
 </html>
